@@ -141,7 +141,7 @@ h1 em, h2 em { font-style: normal; background: linear-gradient(90deg, var(--cyan
 .rating-card > p { margin: 8px 0; color: var(--muted); font-size: 13px; }
 .rating-foot { position: absolute; left: 28px; right: 28px; bottom: 48px; display: flex; justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--line); color: #bdcbd8; font-size: 11px; }.rating-foot span:last-child { color: var(--muted); }
 .fide-id { position: absolute; left: 28px; bottom: 20px; color: #607589; font: 9px/1 monospace; }
-.rating-card--fide::after { content: "?"; position: absolute; right: -16px; bottom: -44px; color: rgba(87,220,255,.06); font-size: 180px; }
+.rating-card--fide::after { content: "♜"; position: absolute; right: -16px; bottom: -44px; color: rgba(87,220,255,.06); font-size: 180px; }
 .platform-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 12px var(--gold); }
 .rating-card--chesscom .platform-dot { background: #80c86f; box-shadow: 0 0 12px #80c86f; }
 .triple-rating { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 66px; }
@@ -311,7 +311,7 @@ h1 em, h2 em { background-image: linear-gradient(95deg, var(--gold) 0%, #e9f4ff 
 
 .rating-value, .triple-rating strong { background: linear-gradient(180deg, #fff, #aebed0); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .rating-card--fide { background: linear-gradient(145deg, rgba(17,41,61,.84), rgba(7,18,31,.88)); }
-.rating-card--fide::after { content: "?"; color: rgba(103,231,255,.055); }
+.rating-card--fide::after { content: "♞"; color: rgba(103,231,255,.055); }
 .rating-card--lichess { background: linear-gradient(145deg, rgba(45,35,22,.3), rgba(8,20,34,.9)); }
 .rating-card--chesscom { background: linear-gradient(145deg, rgba(23,52,40,.34), rgba(7,20,31,.9)); }
 .platform-dot { animation: dotPulse 2.4s ease-in-out infinite; }
@@ -367,4 +367,3 @@ h1 em, h2 em { background-image: linear-gradient(95deg, var(--gold) 0%, #e9f4ff 
   [data-parallax], [data-tilt] { transform: none !important; }
   .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
 }
-
