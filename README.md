@@ -1,4 +1,4 @@
-# M M Jagannath - Personal Portfolio
+# M M Jagannath — Personal Portfolio
 
 A modern, responsive personal portfolio for **M M Jagannath**, a second-year B.Tech student at Jain University, Bengaluru. The site presents my education, technical skills, CareerCompass project, competitive chess ratings, and a functional contact form backed by Python Flask and persistent production storage.
 
@@ -6,7 +6,7 @@ A modern, responsive personal portfolio for **M M Jagannath**, a second-year B.T
 
 ## About Me
 
-I am a second-year B.Tech student pursuing Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Jain University, Bengaluru (2025-Present). I am interested in computer science, programming, technology, AI/ML, experimentation, practical projects, problem-solving, and competitive chess. I value curiosity, persistence, adaptability, and continuous learning.
+I am a second-year B.Tech student pursuing Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Jain University, Bengaluru (2025–Present). I am interested in computer science, programming, technology, AI/ML, experimentation, practical projects, problem-solving, and competitive chess. I value curiosity, persistence, adaptability, and continuous learning.
 
 ## My Technical Skills
 
@@ -36,7 +36,7 @@ I am a second-year B.Tech student pursuing Computer Science and Engineering with
 - SQLite storage for local development and Neon PostgreSQL for production
 - Automated tests for page rendering, health checks, validation, and database storage
 
-## Featured Project - CareerCompass
+## Featured Project — CareerCompass
 
 **CareerCompass** is a career-guidance web application developed as a team project to help students explore career paths, educational opportunities, and future academic choices.
 
@@ -118,18 +118,18 @@ python -m unittest discover -s tests -v
 
 ```text
 .
-��� app.py
-��� static/
-�   ��� css/styles.css
-�   ��� js/app.js
-�   ��� favicon.svg
-��� templates/index.html
-��� tests/test_app.py
-��� requirements.txt
-��� requirements-dev.txt
-��� RUN_PORTFOLIO.bat
-��� vercel.json
-��� .gitignore
+├── app.py
+├── static/
+│   ├── css/styles.css
+│   ├── js/app.js
+│   └── favicon.svg
+├── templates/index.html
+├── tests/test_app.py
+├── requirements.txt
+├── requirements-dev.txt
+├── RUN_PORTFOLIO.bat
+├── vercel.json
+└── .gitignore
 ```
 
 ## Security and Privacy
@@ -146,4 +146,3 @@ Developed by **M M Jagannath** as a college portfolio project. CareerCompass is 
 ## License
 
 This repository is provided for educational and portfolio purposes.
-
