@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Portfolio of M M Jagannath, a B.Tech CSE (AI & ML) student at Jain University.">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#050914">
   <title>M M Jagannath | B.Tech CSE (AI & ML) Student</title>
   <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,9 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <div class="cursor-aura" data-cursor-aura aria-hidden="true"></div>
   <div class="page-glow page-glow--one" aria-hidden="true"></div>
   <div class="page-glow page-glow--two" aria-hidden="true"></div>
 
@@ -33,7 +36,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Project</a>
         <a href="#chess">Chess</a>
-        <a class="nav-cta" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="#contact">Contact me <span aria-hidden="true">?</span></a>
       </div>
     </nav>
   </header>
@@ -41,27 +44,29 @@
   <main id="main-content">
     <section class="hero section" id="home" aria-labelledby="hero-title">
       <div class="shell hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Student portfolio · 2026</p>
-          <h1 id="hero-title">Building skills.<br><em>Solving problems.</em></h1>
-          <p class="hero-lead">I’m <strong>M M Jagannath</strong>, a second-year B.Tech CSE (AI &amp; ML) student at Jain University, Bengaluru—curious about technology, practical projects and thoughtful problem-solving.</p>
+        <div class="hero-copy reveal" data-parallax="-10">
+          <div class="hero-badge"><i></i><span>Second Year</span><b>Jain University</b></div>
+          <p class="eyebrow"><span></span> Student portfolio  2026</p>
+          <h1 id="hero-title"><span class="title-line">Building skills.</span><br><em class="title-line title-line--accent">Solving problems.</em></h1>
+          <p class="hero-lead">I'm <strong>M M Jagannath</strong>, a second-year B.Tech CSE (AI &amp; ML) student at Jain University, Bengaluru-curious about technology, practical projects and thoughtful problem-solving.</p>
           <div class="hero-actions">
-            <a class="button button--primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
-            <a class="button button--ghost" href="#contact">Send a message <span aria-hidden="true">↗</span></a>
+            <a class="button button--primary" href="#projects">Explore my work <span aria-hidden="true">?</span></a>
+            <a class="button button--ghost" href="#contact">Send a message <span aria-hidden="true">?</span></a>
           </div>
           <div class="hero-meta" aria-label="Quick profile details">
-            <div><span>Focus</span><strong>Computer Science · AI/ML</strong></div>
+            <div><span>Focus</span><strong>Computer Science  AI/ML</strong></div>
             <div><span>Based in</span><strong>Bengaluru, India</strong></div>
           </div>
         </div>
 
-        <div class="hero-visual reveal reveal--delay" aria-hidden="true">
+        <div class="hero-visual reveal reveal--delay" aria-hidden="true" data-parallax="16">
+          <div class="hero-halo"></div>
           <div class="orbit orbit--outer"></div>
           <div class="orbit orbit--inner"></div>
-          <div class="code-window">
+          <div class="code-window" data-tilt>
             <div class="window-bar"><i></i><i></i><i></i><span>student_profile.java</span></div>
             <pre><code><span class="code-blue">class</span> <span class="code-cyan">Jagannath</span> {
-  String role = <span class="code-gold">"CSE–AIML Student"</span>;
+  String role = <span class="code-gold">"CSE-AIML Student"</span>;
   String mindset = <span class="code-gold">"Keep learning"</span>;
 
   <span class="code-blue">void</span> build() {
@@ -84,7 +89,7 @@
           <h2 id="about-title">Curiosity turned into <em>steady progress.</em></h2>
         </div>
         <div class="about-grid">
-          <p class="about-lead reveal">I enjoy understanding how technology works—and then applying what I learn to something practical.</p>
+          <p class="about-lead reveal">I enjoy understanding how technology works-and then applying what I learn to something practical.</p>
           <div class="about-copy reveal reveal--delay">
             <p>I am a second-year engineering student interested in programming, computer science and the foundations of artificial intelligence and machine learning. I learn best by experimenting, testing ideas and working through real problems step by step.</p>
             <p>Curiosity, persistence and adaptability shape the way I approach both academics and projects. I am still building my technical foundation, and I value every opportunity to learn, improve and turn concepts into useful outcomes.</p>
@@ -103,10 +108,10 @@
           <h2 id="education-title">Learning with a <em>clear foundation.</em></h2>
         </div>
         <article class="education-card reveal reveal--delay">
-          <div class="education-year">2025 <span>—</span> Present</div>
+          <div class="education-year">2025 <span>-</span> Present</div>
           <div>
-            <p class="card-kicker">Jain University · Bengaluru</p>
-            <h3>B.Tech — Computer Science and Engineering</h3>
+            <p class="card-kicker">Jain University  Bengaluru</p>
+            <h3>B.Tech - Computer Science and Engineering</h3>
             <p class="education-specialization">Artificial Intelligence and Machine Learning</p>
             <span class="status-pill"><i></i> Second Year</span>
           </div>
@@ -121,13 +126,13 @@
           <p>Programming languages and core concepts I am currently learning and applying.</p>
         </div>
         <div class="skills-grid">
-          <article class="skill-card reveal"><span class="skill-number">01</span><span class="skill-icon">J</span><h3>Java</h3><p>Programming</p></article>
-          <article class="skill-card reveal"><span class="skill-number">02</span><span class="skill-icon">SQL</span><h3>SQL</h3><p>Database language</p></article>
-          <article class="skill-card reveal"><span class="skill-number">03</span><span class="skill-icon">&lt;/&gt;</span><h3>HTML</h3><p>Web structure</p></article>
-          <article class="skill-card reveal"><span class="skill-number">04</span><span class="skill-icon">C++</span><h3>C++</h3><p>Programming</p></article>
-          <article class="skill-card reveal"><span class="skill-number">05</span><span class="skill-icon">C</span><h3>C</h3><p>Programming</p></article>
-          <article class="skill-card skill-card--wide reveal"><span class="skill-number">06</span><span class="skill-icon">{ }</span><h3>Object-Oriented Programming</h3><p>Core concept</p></article>
-          <article class="skill-card skill-card--wide reveal"><span class="skill-number">07</span><span class="skill-icon">AI</span><h3>AI &amp; ML Fundamentals</h3><p>Core knowledge area</p></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-number">01</span><span class="skill-icon">J</span><h3>Java</h3><p>Programming</p></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-number">02</span><span class="skill-icon">SQL</span><h3>SQL</h3><p>Database language</p></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-number">03</span><span class="skill-icon">&lt;/&gt;</span><h3>HTML</h3><p>Web structure</p></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-number">04</span><span class="skill-icon">C++</span><h3>C++</h3><p>Programming</p></article>
+          <article class="skill-card reveal" data-tilt><span class="skill-number">05</span><span class="skill-icon">C</span><h3>C</h3><p>Programming</p></article>
+          <article class="skill-card skill-card--wide reveal" data-tilt><span class="skill-number">06</span><span class="skill-icon">{ }</span><h3>Object-Oriented Programming</h3><p>Core concept</p></article>
+          <article class="skill-card skill-card--wide reveal" data-tilt><span class="skill-number">07</span><span class="skill-icon">AI</span><h3>AI &amp; ML Fundamentals</h3><p>Core knowledge area</p></article>
         </div>
       </div>
     </section>
@@ -135,17 +140,17 @@
     <section class="section section--project" id="projects" aria-labelledby="projects-title">
       <div class="shell">
         <div class="section-heading reveal"><p class="section-index">04 / Featured project</p><h2 id="projects-title">From a student need to a <em>working application.</em></h2></div>
-        <article class="project-card reveal">
+        <article class="project-card reveal" data-spotlight>
           <div class="project-visual" aria-hidden="true">
             <div class="project-browser">
               <div class="window-bar"><i></i><i></i><i></i><span>CareerCompass</span></div>
-              <div class="compass-mark"><span>↗</span></div>
+              <div class="compass-mark"><span>?</span></div>
               <p>Find direction.<br><strong>Build your path.</strong></p>
               <div class="mini-cards"><span>Explore</span><span>Assess</span><span>Choose</span></div>
             </div>
           </div>
           <div class="project-content">
-            <p class="card-kicker">Team project · Career guidance</p>
+            <p class="card-kicker">Team project  Career guidance</p>
             <h3>CareerCompass</h3>
             <p class="project-summary">A career guidance web application designed to help students explore career paths, educational opportunities and future academic choices.</p>
             <ul class="feature-list">
@@ -156,8 +161,8 @@
               <p>AI-assisted development coordination, requirements refinement, troubleshooting, testing and GitHub publication.</p>
             </div>
             <div class="project-links">
-              <a class="button button--primary" href="https://careercompass-mmjagannath.vercel.app/" target="_blank" rel="noopener noreferrer">View live website <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="https://github.com/jagannath1473-ops/CareerCompass" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+              <a class="button button--primary" href="https://careercompass-mmjagannath.vercel.app/" target="_blank" rel="noopener noreferrer">View live website <span aria-hidden="true">?</span></a>
+              <a class="text-link" href="https://github.com/jagannath1473-ops/CareerCompass" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">?</span></a>
             </div>
           </div>
         </article>
@@ -171,21 +176,21 @@
           <p class="reveal reveal--delay">Competitive chess strengthens the qualities I value in engineering: strategic thinking, calculation, adaptability, decision-making and the persistence to keep improving after difficult games.</p>
         </div>
         <div class="ratings-grid">
-          <a class="rating-card rating-card--fide reveal" href="https://ratings.fide.com/profile/583023305" target="_blank" rel="noopener noreferrer" aria-label="View official FIDE profile for M M Jagannath">
-            <div class="rating-top"><span>FIDE · India</span><span aria-hidden="true">↗</span></div>
+          <a class="rating-card rating-card--fide reveal" data-tilt href="https://ratings.fide.com/profile/583023305" target="_blank" rel="noopener noreferrer" aria-label="View official FIDE profile for M M Jagannath">
+            <div class="rating-top"><span>FIDE  India</span><span aria-hidden="true">?</span></div>
             <div class="rating-value">1462</div><p>Rapid rating</p>
             <div class="rating-foot"><span>M M Jagannath</span><span>Recorded August 2026</span></div>
-            <div class="fide-id">FIDE ID · 583023305</div>
+            <div class="fide-id">FIDE ID  583023305</div>
           </a>
-          <article class="rating-card rating-card--lichess reveal">
-            <div class="rating-top"><span>Lichess · Personal best</span><span class="platform-dot"></span></div>
+          <article class="rating-card rating-card--lichess reveal" data-tilt>
+            <div class="rating-top"><span>Lichess  Personal best</span><span class="platform-dot"></span></div>
             <div class="triple-rating"><div><strong>1631</strong><span>Rapid</span></div><div><strong>1711</strong><span>Blitz</span></div><div><strong>1616</strong><span>Bullet</span></div></div>
             <p>Personal-best ratings across three time controls.</p>
           </article>
-          <article class="rating-card rating-card--chesscom reveal">
-            <div class="rating-top"><span>Chess.com · Personal best</span><span class="platform-dot"></span></div>
-            <div class="rating-value">1454</div><p>Rapid · Personal best</p>
-            <div class="chess-piece" aria-hidden="true">♞</div>
+          <article class="rating-card rating-card--chesscom reveal" data-tilt>
+            <div class="rating-top"><span>Chess.com  Personal best</span><span class="platform-dot"></span></div>
+            <div class="rating-value">1454</div><p>Rapid  Personal best</p>
+            <div class="chess-piece" aria-hidden="true">?</div>
           </article>
         </div>
       </div>
@@ -195,9 +200,9 @@
       <div class="shell contact-grid">
         <div class="contact-copy reveal">
           <p class="section-index">06 / Contact</p>
-          <h2 id="contact-title">Have a question or an idea? <em>Let’s connect.</em></h2>
+          <h2 id="contact-title">Have a question or an idea? <em>Let's connect.</em></h2>
           <p>Use the form to leave a message. Every valid submission is checked by the Python backend and saved securely.</p>
-          <div class="backend-note"><span class="pulse"></span><div><strong>Flask API connected</strong><small>Server-side validation · Persistent-ready storage</small></div></div>
+          <div class="backend-note"><span class="pulse"></span><div><strong>Flask API connected</strong><small>Server-side validation � Persistent-ready storage</small></div></div>
         </div>
         <form class="contact-form reveal reveal--delay" id="contact-form" novalidate>
           <div class="form-row">
@@ -205,7 +210,7 @@
             <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required><small class="field-error" id="email-error"></small></div>
           </div>
           <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="6" minlength="10" maxlength="2000" placeholder="Write your message here..." required></textarea><div class="field-meta"><small class="field-error" id="message-error"></small><small><span id="message-count">0</span>/2000</small></div></div>
-          <button class="button button--primary submit-button" type="submit"><span class="button-label">Send message</span><span aria-hidden="true">↗</span><span class="spinner" aria-hidden="true"></span></button>
+          <button class="button button--primary submit-button" type="submit"><span class="button-label">Send message</span><span aria-hidden="true">?</span><span class="spinner" aria-hidden="true"></span></button>
           <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
@@ -213,7 +218,9 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-inner"><div><span class="brand-mark">MJ</span><p>M M Jagannath<br><small>B.Tech CSE (AI &amp; ML) Student</small></p></div><p>Designed &amp; built for learning.<br><small>© <span id="current-year">2026</span> M M Jagannath</small></p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div>
+    <div class="shell footer-inner"><div><span class="brand-mark">MJ</span><p>M M Jagannath<br><small>B.Tech CSE (AI &amp; ML) Student</small></p></div><p>Designed &amp; built for learning.<br><small>c <span id="current-year">2026</span> M M Jagannath</small></p><a href="#home">Back to top <span aria-hidden="true"></span></a></div>
   </footer>
 </body>
 </html>
+
+
