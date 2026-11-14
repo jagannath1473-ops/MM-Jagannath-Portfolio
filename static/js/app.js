@@ -174,4 +174,3 @@ form.addEventListener('submit', async (event) => {
 });
 
 document.getElementById('current-year').textContent = new Date().getFullYear();
-
